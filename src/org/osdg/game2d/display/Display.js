@@ -11,15 +11,73 @@ class Display extends G2DEventDispatcher {
     constructor() {
         super();
 
-        this.x = 0;
-        this.y = 0;
-        this.scaleX = 1;
-        this.scaleY = 1;
-        this.rotation = 0;
+        this._x = 0;
+        this._y = 0;
+        this._scaleX = 1;
+        this._scaleY = 1;
+        this._rotation = 0;
+        this._regX = 0;
+        this._regY = 0;
 
         this._enabled = true;
         this._parent = null;
         this._visible = true;
+    }
+
+    set x(value) {
+        this._x = value;
+    }
+
+    get x() {
+        return this._x;
+    }
+
+    set y(value) {
+        this._y = value;
+    }
+
+    get y() {
+        return this._y;
+    }
+
+    set scaleX(value) {
+        this._scaleX = value;
+    }
+
+    get scaleX() {
+        return this._scaleX;
+    }
+
+    set scaleY(value) {
+        this._scaleY = value;
+    }
+
+    get scaleY() {
+        return this._scaleY;
+    }
+
+    set rotation(value) {
+        this._rotation = value;
+    }
+
+    get rotation() {
+        return this._rotation;
+    }
+
+    set regX(value) {
+        this._regX = value;
+    }
+
+    get regX() {
+        return this._regX;
+    }
+
+    set regY(value) {
+        this._regY = value;
+    }
+
+    get regY() {
+        return this._regY;
     }
 
     /**

@@ -69,7 +69,7 @@ class CardMemory extends Game2dApp {
 
         for (let i = 0; i < 8; i++) {
             for (let j = 0; j < 6; j++) {
-                this._points.push({x: this._cardWidth * i, y: this._cardHeight * j});
+                this._points.push({x: this._cardWidth * i + this._cardWidth / 2, y: this._cardHeight * j});
             }
         }
     }

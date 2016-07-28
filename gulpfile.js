@@ -42,7 +42,7 @@ function defineTasks(distFileName, srcFiles, taskName) {
     const distMapFileName = `${distFileName}.map`;
     insertLibSrcFilesToSrcFilesArray(srcFiles);
 
-    const compileScript = `${gcc} --js_output_file ${distFile} --create_source_map ${distMapFileName} --js ${srcFiles.join(" ")}`;
+    const compileScript = `${gcc} --language_out=ES5 --js_output_file ${distFile} --create_source_map ${distMapFileName} --js ${srcFiles.join(" ")}`;
 
     const compileTaskName = `compile${taskName}`;
     const appendMapInfoTaskName = `appendMapInfoTo${taskName}`;

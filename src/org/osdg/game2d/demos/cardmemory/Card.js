@@ -15,12 +15,15 @@ class Card extends Container {
 
         this._faceA = new Container();
         this._faceABg = new Rectangle(width, height, "red");
+        this._faceABg.regX = width / 2;
         this._faceA.addChild(this._faceABg);
         this._text = new Text("" + num, 30);
+        this._text.x = -5;
         this._faceA.addChild(this._text);
         this.addChild(this._faceA);
 
         this._faceB = new Rectangle(width, height, "blue");
+        this._faceB.regX = width / 2;
         this.addChild(this._faceB);
 
         this.showFaceA();
@@ -38,9 +41,9 @@ class Card extends Container {
 
     turnToFaceB() {
         if (this._faceA.isVisible()) {
-            new PropertyAnim(this._faceA, "scaleX", 1, 0, 20, ()=> {
+            new PropertyAnim(this._faceA, "scaleX", 1, 0, 10, ()=> {
                 this.showFaceB();
-                new PropertyAnim(this._faceB, "scaleX", 0, 1, 20).start();
+                new PropertyAnim(this._faceB, "scaleX", 0, 1, 10).start();
             }).start();
         }
     }
