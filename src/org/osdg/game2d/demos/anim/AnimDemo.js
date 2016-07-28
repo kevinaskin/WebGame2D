@@ -2,9 +2,9 @@
  * Created by plter on 7/27/16.
  */
 
-import Game2dApp from "cn/ucai/game2d/app/Game2dApp";
-import Rectangle from "cn/ucai/game2d/display/Rectangle";
-import PropertyAnim from  "cn/ucai/game2d/anim/PropertyAnim";
+import Game2dApp from "org/osdg/game2d/app/Game2dApp";
+import Rectangle from "org/osdg/game2d/display/Rectangle";
+import PropertyAnim from  "org/osdg/game2d/anim/PropertyAnim";
 
 class AnimDemo extends Game2dApp {
 

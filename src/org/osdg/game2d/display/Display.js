@@ -2,8 +2,8 @@
  * Created by plter on 7/26/16.
  */
 
-import G2DEventDispatcher from "cn/ucai/game2d/events/G2DEventDispatcher";
-import G2DMouseEvent from "cn/ucai/game2d/events/G2DMouseEvent";
+import G2DEventDispatcher from "org/osdg/game2d/events/G2DEventDispatcher";
+import G2DMouseEvent from "org/osdg/game2d/events/G2DMouseEvent";
 
 
 class Display extends G2DEventDispatcher {

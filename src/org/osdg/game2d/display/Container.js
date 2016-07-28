@@ -2,7 +2,7 @@
  * Created by plter on 7/26/16.
  */
 
-import Display from "cn/ucai/game2d/display/Display";
+import Display from "org/osdg/game2d/display/Display";
 
 class Container extends Display {
 

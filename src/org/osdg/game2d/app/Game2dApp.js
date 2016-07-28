@@ -2,8 +2,8 @@
  * Created by plter on 7/26/16.
  */
 
-import Container from "cn/ucai/game2d/display/Container"
-import G2DEvent from "cn/ucai/game2d/events/G2DEvent";
+import Container from "org/osdg/game2d/display/Container"
+import G2DEvent from "org/osdg/game2d/events/G2DEvent";
 
 class Game2dApp extends Container {
 

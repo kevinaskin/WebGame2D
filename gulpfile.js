@@ -6,20 +6,21 @@ const gulp = require("gulp");
 const shell = require("gulp-shell");
 const fs = require("fs");
 
+const BASE_PACKAGE = "org/osdg/game2d";
 const closureCompilerFileName = "closure-compiler-v20160713.jar";
 const closureCompilerFile = `${__dirname}/tools/${closureCompilerFileName}`;
 const distDir = `${__dirname}/dist`;
 const gcc/*Google closure compiler*/ = `java -jar ${closureCompilerFile}`;
 const libSrcFiles = [
-    "cn/ucai/game2d/events/G2DEvent.js",
-    "cn/ucai/game2d/events/G2DMouseEvent.js",
-    "cn/ucai/game2d/events/G2DEventDispatcher.js",
-    "cn/ucai/game2d/display/Display.js",
-    "cn/ucai/game2d/display/Rectangle.js",
-    "cn/ucai/game2d/display/Text.js",
-    "cn/ucai/game2d/display/Container.js",
-    "cn/ucai/game2d/anim/PropertyAnim.js",
-    'cn/ucai/game2d/app/Game2dApp.js'
+    `${BASE_PACKAGE}/events/G2DEvent.js`,
+    `${BASE_PACKAGE}/events/G2DMouseEvent.js`,
+    `${BASE_PACKAGE}/events/G2DEventDispatcher.js`,
+    `${BASE_PACKAGE}/display/Display.js`,
+    `${BASE_PACKAGE}/display/Rectangle.js`,
+    `${BASE_PACKAGE}/display/Text.js`,
+    `${BASE_PACKAGE}/display/Container.js`,
+    `${BASE_PACKAGE}/anim/PropertyAnim.js`,
+    `${BASE_PACKAGE}/app/Game2dApp.js`
 ];
 
 function cloneArray(arr) {
@@ -59,10 +60,10 @@ function defineTasks(distFileName, srcFiles, taskName) {
 
 
 function init() {
-    defineTasks("AnimDemos.min.js", ["cn/ucai/demos/anim/AnimDemo.js"], "AnimDemo");
+    defineTasks("AnimDemos.min.js", [`${BASE_PACKAGE}/demos/anim/AnimDemo.js`], "AnimDemo");
     defineTasks("CardMemory.min.js", [
-        "cn/ucai/demos/cardmemory/Card.js",
-        "cn/ucai/demos/cardmemory/CardMemory.js"
+        `${BASE_PACKAGE}/demos/cardmemory/Card.js`,
+        `${BASE_PACKAGE}/demos/cardmemory/CardMemory.js`
     ], "CardMemory");
 
     gulp.task("default", ["AnimDemo", "CardMemory"]);

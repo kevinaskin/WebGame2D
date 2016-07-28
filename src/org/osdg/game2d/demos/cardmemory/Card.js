@@ -2,10 +2,10 @@
  * Created by plter on 7/27/16.
  */
 
-import Container from "cn/ucai/game2d/display/Container";
-import Rectangle from "cn/ucai/game2d/display/Rectangle";
-import Text from "cn/ucai/game2d/display/Text";
-import PropertyAnim from "cn/ucai/game2d/anim/PropertyAnim";
+import Container from "org/osdg/game2d/display/Container";
+import Rectangle from "org/osdg/game2d/display/Rectangle";
+import Text from "org/osdg/game2d/display/Text";
+import PropertyAnim from "org/osdg/game2d/anim/PropertyAnim";
 
 class Card extends Container {
     constructor(num, width, height) {

@@ -2,8 +2,8 @@
  * Created by plter on 7/27/16.
  */
 
-import Game2dApp from "cn/ucai/game2d/app/Game2dApp";
-import Card from "cn/ucai/demos/cardmemory/Card";
+import Game2dApp from "org/osdg/game2d/app/Game2dApp";
+import Card from "org/osdg/game2d/demos/cardmemory/Card";
 
 class CardMemory extends Game2dApp {
 

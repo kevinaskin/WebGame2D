@@ -2,7 +2,7 @@
  * Created by plter on 7/27/16.
  */
 
-import G2DEvent from "cn/ucai/game2d/events/G2DEvent";
+import G2DEvent from "org/osdg/game2d/events/G2DEvent";
 
 export default class PropertyAnim {
     constructor(target, propertyName, from, to, frames, completeHandler) {
