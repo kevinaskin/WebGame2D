@@ -70,3 +70,5 @@ function init() {
 }
 
 init();
+
+// gulp.watch("src/**/*.js", ["default"]);
